@@ -1,0 +1,16 @@
+/* The main stylesheet of this project*/
+
+/* importing the base css */
+@import "typo.css";
+@import "base.css";
+@import "media-queries.css";
+
+/*
+-----------------
+-----------------
+-----------------
+I have imported all the stylesheet to this css file and named it main css.
+-----------------
+-----------------
+-----------------
+*/
