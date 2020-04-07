@@ -1,0 +1,91 @@
+/*
+-----------------
+-----------------
+-----------------
+this stylesheet is only for the single blog post page and i have added this stylesheet to the single page html
+-----------------
+-----------------
+-----------------
+*/
+
+/*
+-----------------
+-----------------
+-----------------
+content section
+-----------------
+-----------------
+-----------------
+*/
+
+.container {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-content: center;
+}
+
+.card {
+  justify-items: center;
+}
+
+img {
+  width: 100%;
+}
+
+.author img {
+  width: 50%;
+}
+
+h2 {
+  text-decoration: underline;
+}
+
+.author {
+  text-align: center;
+}
+
+/*
+-----------------
+-----------------
+-----------------
+media query for images and author section
+-----------------
+-----------------
+-----------------
+*/
+
+@media (min-width: 700px) {
+  img {
+    width: 40%;
+  }
+
+  h2,
+  h4,
+  h5 {
+    margin-top: 20px;
+    line-height: 0.5rem;
+  }
+
+  .author {
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+  }
+
+  .author img {
+    width: 25%;
+    /* margin-left: 300px; */
+    text-align: right;
+  }
+
+  .author-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 50px;
+    align-content: center;
+    width: 60%;
+  }
+}
