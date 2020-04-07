@@ -1,0 +1,54 @@
+/*
+-----------------
+-----------------
+-----------------
+media query section for mobile devices
+-----------------
+-----------------
+-----------------
+*/
+
+@media (min-width: 600px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header img {
+    width: 20px;
+    display: inline;
+    align-self: center;
+    cursor: pointer;
+  }
+
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+
+  .card {
+    text-align: center;
+    width: 1fr;
+  }
+
+  .card > .btn {
+    align-items: flex-end;
+  }
+}
+
+/*
+-----------------
+-----------------
+-----------------
+media query section desktop and large devices
+-----------------
+-----------------
+-----------------
+*/
+
+@media (min-width: 900px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
